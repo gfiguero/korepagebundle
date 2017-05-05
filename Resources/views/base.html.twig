@@ -12,12 +12,9 @@
     <meta name="author" content="Kore">
     <meta name="language" content="es">
     <title>Kore - {% block title %}{% endblock %}</title>
-    <link href="{{ asset('css/font-awesome/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('css/jqueryui/jquery-ui.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/metismenu/metisMenu.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/multiselect/bootstrap-multiselect.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap-fileinput/fileinput.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/bootstrap-toggle/bootstrap-toggle.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('bundles/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('bundles/jqueryui/themes/base/jquery-ui.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('bundles/metismenu/dist/metisMenu.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/backend.css') }}" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -41,22 +38,12 @@
             </div>
         </div>
     </div>
-    <script src="{{ asset('js/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('js/jqueryui/jquery-ui.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('js/metismenu/metisMenu.min.js') }}"></script>
-    <script src="{{ asset('js/braincrafted/bc-bootstrap-collection.js') }}"></script>
-    <script src="{{ asset('js/multiselect/bootstrap-multiselect.js') }}"></script>
-    <script src="{{ asset('js/bootstrap-fileinput/plugins/canvas-to-blob.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap-fileinput/plugins/sortable.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap-fileinput/plugins/purify.min.js') }}"></script>
-    <script src="{{ asset('js/bootstrap-fileinput/fileinput.min.js') }}"></script>
-    <script src="{{ asset('themes/bootstrap-fileinput/fa/theme.js') }}"></script>
-    <script src="{{ asset('js/bootstrap-fileinput/locales/es.js') }}"></script>
-    <script src="{{ asset('js/bootstrap-toggle/bootstrap-toggle.min.js') }}"></script>
-    <script src="{{ asset('js/hvgsystem.js') }}"></script>
-    <script src="{{ asset('js/jquery.rut.min.js') }}"></script>
-    <script src="{{ asset('js/test.js') }}"></script>
+    <script src="{{ asset('bundles/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('bundles/jqueryui/jquery-ui.min.js') }}"></script>
+    <script src="{{ asset('bundles/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('bundles/metismenu/dist/metisMenu.min.js') }}"></script>
+    <script src="{{ asset('bundles/braincrafted/js/bc-bootstrap-collection.js') }}"></script>
+    <script src="{{ asset('js/backend.js') }}"></script>
     {% block javascript %}{% endblock %}
 </body>
 </html>
