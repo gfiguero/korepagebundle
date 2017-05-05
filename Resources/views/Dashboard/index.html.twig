@@ -1,5 +1,18 @@
 {% extends 'KorePageBundle::base.html.twig' %}
+{% use 'KorePageBundle::navbar.html.twig' %}
+{% use 'KorePageBundle::sidebar.html.twig' %}
+{% use 'KorePageBundle::icons.html.twig' %}
+
+{% set translation_domain = 'KorePageBundle' %}
+{% trans_default_domain translation_domain %}
 
 {% block body %}
-    hola
+        <div class="row" id="page-header">
+            <div class="col-lg-12">
+                <h1 class="page-header">{% block icons %}{{ parent() }}{% endblock %}{{ 'dashboard.index.title'|trans }}</h1>
+                {% include 'KorePageBundle::flashbag.html.twig' with { 'translation_domain': translation_domain } %}
+            </div>
+        </div>
+        <!-- /#page-header -->
+    holaaaaaa
 {% endblock %}

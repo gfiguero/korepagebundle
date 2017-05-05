@@ -47,14 +47,6 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"
-        },
-        "mouf": {
-            "nodejs": {
-                "includeBinInPath ": true
-            }
-        },
-        "require-npm": {
-            "less": "*"
         }
     }
 }
