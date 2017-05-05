@@ -1,0 +1,4 @@
+services:
+#    kore_page.example:
+#        class: Kore\PageBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
