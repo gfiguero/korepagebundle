@@ -1,0 +1,24 @@
+frontpage_index:
+    path:     /
+    defaults: { _controller: "KorePageBundle:Frontpage:index" }
+    methods:  GET
+
+frontpage_show:
+    path:     /{id}/show
+    defaults: { _controller: "KorePageBundle:Frontpage:show" }
+    methods:  GET
+
+frontpage_new:
+    path:     /new
+    defaults: { _controller: "KorePageBundle:Frontpage:new" }
+    methods:  [GET, POST]
+
+frontpage_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "KorePageBundle:Frontpage:edit" }
+    methods:  [GET, POST]
+
+frontpage_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "KorePageBundle:Frontpage:delete" }
+    methods:  DELETE

@@ -1,3 +1,11 @@
+kore_page_frontpagephoto:
+    resource: "@KorePageBundle/Resources/config/routing/frontpagephoto.yml"
+    prefix:   /frontpagephoto
+
+kore_page_frontpage:
+    resource: "@KorePageBundle/Resources/config/routing/frontpage.yml"
+    prefix:   /frontpage
+
 kore_page_dashboard:
     path:     /
     defaults: { _controller: KorePageBundle:Dashboard:index }

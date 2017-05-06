@@ -1,0 +1,45 @@
+Kore\PageBundle\Entity\Frontpage:
+    type: entity
+    table: Frontpage
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    oneToMany:
+        photos:
+            targetEntity: Kore\PageBundle\Entity\FrontpagePhoto
+            mappedBy: frontpage
+    fields:
+        name:
+            type: string
+            length: 300
+        title:
+            type: string
+            length: 300
+        subtitle:
+            type: string
+            length: 300
+            nullable: true
+        about:
+            type: text
+            nullable: true
+        createdAt:
+            type: datetime
+            gedmo:
+                timestampable:
+                    on: create
+        updatedAt:
+            type: datetime
+            gedmo:
+                timestampable:
+                    on: update
+        deletedAt:
+            type: datetime
+            nullable: true
+    gedmo:
+        soft_deleteable:
+            field_name: deletedAt
+            time_aware: false
+    lifecycleCallbacks: {  }

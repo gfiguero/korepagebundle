@@ -1,3 +1,13 @@
 dashboard:
     index:
         title: Dashboard
+
+frontpage:
+    form:
+        id: ID
+        name: Nombre
+        title: Título
+        subtitle: Subtítulo
+        about: Nosotros
+        createdAt: Creado
+        updatedAt: Actualizado
